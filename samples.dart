@@ -81,3 +81,56 @@
 //   myDog.run();
 // }
 
+// Calculate area
+// class Area {
+//   // Properties
+//   double length;
+//   double width;
+
+//   // Constructor
+//   Area(this.length, this.width);
+
+//   // Method to calculate area
+//   double calculateArea() {
+//     return length * width;
+//   }
+// }
+
+// void main() {
+//   // Creating an instance of the Area class
+//   var rectangle = Area(10.0, 7.5);
+
+//   // Calculating and printing the area
+//   print('Area of the rectangle: ${rectangle.calculateArea()} square units');
+// }
+
+
+// --- Objects -----
+// Define a class representing an Animal
+class Animal {
+  // Properties
+  String name;
+  String species;
+
+  // Constructor
+  Animal(this.name, this.species);
+  
+  // Method to make the animal sound
+  void makeSound() {
+    print('$name (${species}) makes a sound.');
+  }
+}
+
+void main() {
+  // Creating instances (objects) of the Animal class
+  var cat = Animal('Whiskers', 'Cat');
+  var dog = Animal('Buddy', 'Dog');
+
+  // Accessing properties and behaviors
+  print('${cat.name} is a ${cat.species}.');
+  cat.makeSound();
+
+  print('${dog.name} is a ${dog.species}.');
+  dog.makeSound();
+}
+
